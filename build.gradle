@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'groovy'
+    id 'idea'
+
+}
+
+mainClassName = "MortgageCalculator"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
