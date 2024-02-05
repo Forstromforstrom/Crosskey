@@ -61,7 +61,7 @@ public class MortgageCalculator {
     public static double powerOf(double base, int power) {
         double num = 1;
         for (int i = 0; i < power; i++) {
-            num += base;
+            num = num * base;
         }
         return num;
     }
